@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://unpkg.com/open-props"/>
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <center>
+        <h1>FACE RECOGNITION WEB APP</h1>
+        <h3>Model is trained to identify the following objects:</h3>
+        </center>
+        <center>
+          <p class="box">Mother</p>
+          <p class="box">Father</p>
+          <p class="box">Sister</p>
+          <p class="box">Me</p>
+        </center>
+        <center>
+          <h4>Webcam View</h4>
+          <div id="camera"></div>
+          </center>
+          <button onclick="snapshot()">Take a picture</button>
+          <div class="upload">
+            <!--Create an element to upload an image and use the upload function-->
+            <input type="file" id="file_input" accept="image/*" onchange="upload()"/>
+          </div>
+          <button onclick="check()">Identify image</button>
+      </div>
+      <div id="result">
+      </div>
+      <h3 id="result_object_name"></h3>
+      <h3 id="result_object_accuracy"></h3>
+    </main>
+  </body>
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>  
+  <script src="main.js"></script>
+</html>

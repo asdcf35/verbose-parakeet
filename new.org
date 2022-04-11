@@ -1,0 +1,3 @@
+#+TITLE: Tasks for ADV-C103 Project
+* DONE build front-end HTML
+* TODO Create Teachable Machine

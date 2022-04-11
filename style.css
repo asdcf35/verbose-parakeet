@@ -1,0 +1,42 @@
+body{
+    background-color: var(--grape-2);
+}
+.container{
+    display: grid;
+    place-content: center;
+    width: 100vh;
+    width: 100vw;
+}
+.box{
+    width: 20ch;
+    height: var(--font-size-6);
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-7);
+    background-color: var(--blue-3);
+    font-family: var(--font-sans);
+    border: 0 auto black;
+    border-radius: 1.5vh;
+    display: grid;
+    place-content: center;
+}
+.container{
+    margin-inline: auto;
+}
+h1{
+    font-size: var(--font-size-8);
+    font-family:var(--font-sans);
+    font-weight: var(--font-weight-7);
+}
+h3{
+    font-size: var(--font-size-5);
+    font-family:var(--font-sans);
+    font-weight: var(--font-weight-5);
+}
+h4{
+    font-family: var(--font-sans);
+}
+.webcam{
+    border: 1vh dashed var(--gray-6);
+    width: 40vw;
+    height: 40vh;
+}
